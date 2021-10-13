@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import BinarySearch704 from './Problems/BinarySearch704';
+import FirstBadVersion278 from './Problems/FirstBadVersion278';
+import SearchInsertPosition35 from './Problems/SearchInsertPosition35';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>
+        Sean's DS&A Problem Solutions
+      </h1>
+      <BinarySearch704/>
+      <FirstBadVersion278/>
+      <SearchInsertPosition35/>      
     </div>
   );
 }

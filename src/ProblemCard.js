@@ -4,28 +4,31 @@ function ProblemCard(props) {
 
     const[visible, changeVisibility] = useState(false)
 
-    let fullInformation = 
-        <div>
-            <h4>
-                Language: {props.language}
-            </h4>
-            <div>
+    return(
+        <div className = {"problemCard"}>
+            <button className = {visible ? "problemTitle problemTitleActive" : "problemTitle"} onClick = {() => {changeVisibility(!visible)}}>{props.title}</button>
+            <div className = {visible ? "collapsingContent uncollapse" : "collapsingContent"}>
+            <p>
+                Language: 
+            </p>
+            <p>
+                {props.language}
+            </p>
+            <hr/>
+            <p>
+                Prompt:
+            </p> 
+            <p>
                 {props.problem}
-            </div>
+            </p>
+            <hr/>
+            <p>
+                Solution:
+            </p> 
             <pre>
                 {props.solution}
             </pre>
         </div>
-
-    return(
-        <div className = {"problemCard"}>
-            <button onClick = {() => {changeVisibility(!visible)}}>{visible ? "HIDE" : "SHOW"}</button>
-            <h3>
-                {props.title}
-            </h3>
-            {visible 
-            ? <div className = "expandable">{fullInformation}</div>
-            : null}
             
         </div>
     )

@@ -3,6 +3,9 @@ import ProblemCard from "../ProblemCard.js";
 
 function BinarySearch704() {
 
+    const[nums, changeNums] = useState([])
+    const[target, changeTarget] = useState(null)
+
     const title = 
     `
     704. Binary Search
@@ -30,6 +33,12 @@ function BinarySearch704() {
         return result
     };
     `
+
+    var search = function(nums, target) {
+        let result = nums.findIndex((number) => number == target)
+        return result
+    }
+
     ;
 
     return(
@@ -40,6 +49,8 @@ function BinarySearch704() {
             problem = {problem}
             solution = {solution}
             />
+
+            <input name = "nums" onChange = {(e) => changeNums(e.target.value.split(",").map(value => parseInt(value,10)))}></input>
         </div>
     )
 

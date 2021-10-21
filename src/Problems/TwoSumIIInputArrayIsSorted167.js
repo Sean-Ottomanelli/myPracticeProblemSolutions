@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ProblemCard from "../ProblemCard.js";
 
-function TwoSumIIInputArrayIsSorted176() {
+function TwoSumIIInputArrayIsSorted167() {
 
     const title = 
     `
@@ -71,4 +71,4 @@ function TwoSumIIInputArrayIsSorted176() {
 
 }
 
-export default TwoSumIIInputArrayIsSorted176
+export default TwoSumIIInputArrayIsSorted167

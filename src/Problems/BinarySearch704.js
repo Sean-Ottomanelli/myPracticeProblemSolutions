@@ -49,8 +49,6 @@ function BinarySearch704() {
             problem = {problem}
             solution = {solution}
             />
-
-            <input name = "nums" onChange = {(e) => changeNums(e.target.value.split(",").map(value => parseInt(value,10)))}></input>
         </div>
     )
 

@@ -11,6 +11,11 @@ import ReverseWordsInAStringIII557 from './Problems/ReverseWordsInAStringIII557'
 import MiddleOfTheLinkedList876 from './Problems/MiddleOfTheLinkedList876';
 import RemoveNthNodeFromEndOfList19 from './Problems/RemoveNthNodeFromEndOfList19';
 import LongestSubstringWithoutRepeatingCharacters3 from './Problems/LongestSubstringWithoutRepeatingCharacters3';
+import PermutationInString567 from './Problems/PermutationInString567';
+import FloodFill733 from './Problems/FloodFill733';
+import MaxAreaOfIsland695 from './Problems/MaxAreaOfIsland695';
+import MergeTwoBinaryTrees617 from './Problems/MergeTwoBinaryTrees617';
+import PopulatingNextRightPointersInEachNode116 from './Problems/PopulatingNextRightPointersInEachNode116';
 
 function App() {
   return (
@@ -29,7 +34,12 @@ function App() {
       <ReverseWordsInAStringIII557/>
       <MiddleOfTheLinkedList876/>
       <RemoveNthNodeFromEndOfList19/>
-      <LongestSubstringWithoutRepeatingCharacters3/>      
+      <LongestSubstringWithoutRepeatingCharacters3/>
+      <PermutationInString567/>
+      <FloodFill733/>
+      <MaxAreaOfIsland695/>
+      <MergeTwoBinaryTrees617/> 
+      <PopulatingNextRightPointersInEachNode116/>     
     </div>
   );
 }
